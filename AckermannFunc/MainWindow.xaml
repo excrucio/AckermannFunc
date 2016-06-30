@@ -23,10 +23,10 @@
         <xctk:IntegerUpDown x:Name="PickM" Minimum="0" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" MinWidth="129" MinHeight="20" />
         <xctk:IntegerUpDown x:Name="PickN" Minimum="0" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top" MinWidth="129" MinHeight="20" />
 
-        <TextBox x:Name="textBox_result" Background="AliceBlue" Margin="10,51,10,10" TextWrapping="Wrap" Focusable="True" Padding="2,2,2,4" ScrollViewer.CanContentScroll="True" MinWidth="720" MinHeight="430" IsReadOnly="True" FontFamily="Consolas" VerticalScrollBarVisibility="Auto" />
+        <TextBox x:Name="textBox_result" Background="AliceBlue" Margin="10,76,10,10" TextWrapping="Wrap" Focusable="True" Padding="2,2,2,4" ScrollViewer.CanContentScroll="True" MinWidth="720" MinHeight="430" IsReadOnly="True" FontFamily="Consolas" VerticalScrollBarVisibility="Auto" />
         <Grid MinWidth="20" MinHeight="35" MaxHeight="30" Margin="425,11,10,0" VerticalAlignment="Top">
             <ProgressBar x:Name="ProgressBar0" MinHeight="25" Height="25" MinWidth="339" Margin="0,0,40,0" />
-            <TextBox x:Name="textBox"  MinWidth="20" Height="18" Background="Transparent" BorderThickness="0" TextAlignment="Center" IsReadOnly="True"  Focusable="False" AllowDrop="False" IsTabStop="False" />
+            <TextBox x:Name="textBox"  Margin="0,0,40,0" MinWidth="20" Height="18" Background="Transparent" BorderThickness="0" TextAlignment="Center" IsReadOnly="True"  Focusable="False" AllowDrop="False" IsTabStop="False" />
             <Button x:Name="help_button" Click="help_Click"   Margin="290,0,5,0" VerticalAlignment="Top" Width="30" Height="30" HorizontalAlignment="Right">
                 <Button.Template>
                     <ControlTemplate>
@@ -35,5 +35,7 @@
                 </Button.Template>
             </Button>
         </Grid>
+        <Label x:Name="label2" Content="Time elapsed (hh:mm:ss): " HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" />
+        <Label x:Name="TimeElapsed_label" HorizontalAlignment="Left" Margin="155,45,0,0" VerticalAlignment="Top" />
     </Grid>
 </Window>

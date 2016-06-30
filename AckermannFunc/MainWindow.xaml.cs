@@ -1,11 +1,18 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Numerics;
 using System.Threading.Tasks;
 using System.Windows;
 
 namespace AckermannFunc
 {
+    internal class AckResult
+    {
+        public BigInteger result { get; set; }
+        public TimeSpan duration { get; set; }
+    }
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -35,7 +42,16 @@ namespace AckermannFunc
             var m = new BigInteger(((Tuple<int, int>)e.Argument).Item1);
             var n = new BigInteger(((Tuple<int, int>)e.Argument).Item2);
 
-            e.Result = Ackermann(m, n, worker, e);
+            Stopwatch stp = new Stopwatch();
+            stp.Start();
+
+            AckResult rez = Ackermann(m, n, worker, e);
+
+            stp.Stop();
+
+            rez.duration = stp.Elapsed;
+
+            e.Result = rez;
         }
 
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -54,7 +70,8 @@ namespace AckermannFunc
             else
             {
                 finish();
-                textBox_result.Text = e.Result.ToString();
+                textBox_result.Text = ((AckResult)e.Result).result.ToString();
+                TimeElapsed_label.Content = ((AckResult)e.Result).duration.ToString();
                 textBox.Text = textBox_result.Text.Length.ToString() + " digits";
             }
 
@@ -75,6 +92,7 @@ namespace AckermannFunc
             textBox.Text = "";
             textBox_result.Text = "";
             button.Content = "Calculate";
+            TimeElapsed_label.Content = "";
         }
 
         private void finish()
@@ -84,6 +102,7 @@ namespace AckermannFunc
             textBox.Text = "";
             textBox_result.Text = "";
             button.Content = "Calculate";
+            TimeElapsed_label.Content = "";
         }
 
         private void help_Click(object sender, RoutedEventArgs e)
@@ -173,7 +192,7 @@ namespace AckermannFunc
             }
         }
 
-        public BigInteger Ackermann(BigInteger m, BigInteger n, BackgroundWorker bckg_work, DoWorkEventArgs e)
+        private AckResult Ackermann(BigInteger m, BigInteger n, BackgroundWorker bckg_work, DoWorkEventArgs e)
         {
             var stack = new OverflowlessStack<BigInteger>();
             stack.Push(m);
@@ -210,7 +229,7 @@ namespace AckermannFunc
                 }
             }
 
-            return n;
+            return new AckResult { result = n };
         }
     }
 }

@@ -14,3 +14,4 @@ C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\Ackermann
 C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Debug\AckermannFunc.csproj.GenerateResource.Cache
 C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Debug\AckermannFunc.exe
 C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Debug\AckermannFunc.pdb
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Debug\AckermannFunc.csprojResolveAssemblyReference.cache
