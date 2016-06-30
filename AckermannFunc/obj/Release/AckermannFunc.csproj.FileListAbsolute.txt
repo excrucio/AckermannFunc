@@ -1,0 +1,14 @@
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\Help.g.cs
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\MainWindow.g.cs
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\App.g.cs
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc_MarkupCompile.cache
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc_MarkupCompile.lref
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\Help.baml
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\MainWindow.baml
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc.g.resources
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc.Properties.Resources.resources
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc.csproj.GenerateResource.Cache
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\obj\Release\AckermannFunc.exe
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\bin\Release\AckermannFunc.exe.config
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\bin\Release\AckermannFunc.exe
+C:\Users\jvinkovic\Documents\Visual Studio 2015\Projects\AckermannFunc\AckermannFunc\bin\Release\Xceed.Wpf.Toolkit.dll
